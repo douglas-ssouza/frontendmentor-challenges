@@ -1,0 +1,92 @@
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --darkBlue: hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transWhite: hsla(0, 0%, 100%, 0.75);
+    --moreTransWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font: 400 15px 'Inter', sans-serif;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--darkBlue);
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 100px;
+
+    display: flex;
+}
+
+main #info {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+
+main #info h1 {
+    font-size: 42px;
+}
+
+main #info strong {
+    color: var(--softViolet);
+}
+
+main #info > p {
+    color: var(--transWhite);
+    font-size: 20px;
+
+    margin-top: 35px;
+}
+
+main #container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+
+main .box {
+    margin-right: 20px;
+}
+
+main .box h2 {
+    font-size: 30px;
+}
+
+main .box p {
+    color: var(--transWhite);
+}
+
+main #image {
+    background-color: var(--softViolet);
+    border-radius: 0px 10px 10px 0px;
+
+    display: flex;
+}
+
+main #image img {
+    opacity: 70%;
+    border-radius: 0px 10px 10px 0px;
+}
