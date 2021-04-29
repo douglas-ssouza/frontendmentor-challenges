@@ -25,16 +25,15 @@ body {
     background-color: var(--veryDarkBlue);
     font: 400 15px 'Inter', sans-serif;
     color: var(--white);
-
-    display: flex;
-    justify-content: center;
 }
 
 main {
     background-color: var(--darkBlue);
     width: 80%;
     border-radius: 10px;
-    margin-top: 100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
 
     display: flex;
 }
@@ -89,4 +88,66 @@ main #image {
 main #image img {
     opacity: 70%;
     border-radius: 0px 10px 10px 0px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+
+    main {
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    main #info {
+        margin: 30px;
+    }
+
+    main #info h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    main #info > p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main #container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    main #container .box {
+        margin-bottom: 20px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    main .box h2 {
+        font-size: 20px;
+    }
+
+    main .box p {
+        font-size: 12px;
+    }
+
+    main #image {
+        border-radius: 0px;
+        order: -1;
+    }
+
+    main #image img {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
 }
