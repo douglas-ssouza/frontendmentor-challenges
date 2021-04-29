@@ -33,9 +33,9 @@ body {
     font-size: 15px;
     padding: 80px 60px 0px 80px;
 
-    background-image: url(../images/bg-pattern-top-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
     
 }
 
