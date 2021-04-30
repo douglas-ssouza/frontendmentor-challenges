@@ -28,13 +28,13 @@ main {
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171);
 }
 
 main #topbox {
     background-color: white;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     padding: 40px;
 }
 
@@ -51,20 +51,22 @@ main #topbox h2 {
 
 main #topbox p {
     color: var(--grayBlue);
-    margin-bottom: 5px;
+    width: 85%;
+    line-height: 30px;
 }
 
 main #bottombox {
     display: flex;
     flex-direction: row;
     color: white;
+    flex-wrap: nowrap;
 }
 
 main #bottombox #sub {
     background-color: var(--cyan);
     padding: 40px;
-    border-radius: 0px 0px 0px 10px;
-    width: 50%;
+    border-radius: 0px 0px 0px 5px;
+    width: 100%;
 }
 
 main #bottombox h2 {
@@ -103,7 +105,7 @@ main #bottombox button {
     background-color: var(--brightYellow);
     width: 95%;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     font-size: 18px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
@@ -112,16 +114,67 @@ main #bottombox button {
 main #bottombox #why {
     background-color: var(--lightCyan);
     padding: 40px;
-    border-radius: 0px 0px 10px 0px;
-    width: 50%;
+    border-radius: 0px 0px 5px 0px;
+    width: 100%;
 }
 
 main #bottombox #why p {
-    width: 65%;
     line-height: 20px;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 380px) {
+
+    main {
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    main #topbox {
+        padding: 20px;
+    }
+
+    main #topbox h1 {
+        font-size: 20px;
+    }
+
+    main #topbox h2 {
+        font-size: 15.5px;
+    }
+
+    main #topbox p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    main #bottombox {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main #bottombox #sub {
+        border-radius: 0px;
+        width: 87.8%;
+        padding: 20px;
+    }
+
+    main #bottombox h2 {
+        font-size: 20px;
+    }
+
+    main #bottombox #why {
+        border-radius: 0px 0px 5px 5px;
+        width: 87.8%;
+        padding: 20px;
+    }
+    
+    main #bottombox #why p{
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
