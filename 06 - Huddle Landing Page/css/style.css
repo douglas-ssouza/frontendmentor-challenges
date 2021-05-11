@@ -72,6 +72,37 @@ main #text button {
     border: none;
     background-color: white;
     color: var(--violet);
+
+    cursor: pointer;
+}
+
+main #text button:hover {
+    color: var(--magenta);
+}
+
+main #text button:active {
+    background-color: var(--magenta);
+    color: white;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#social > a {
+    margin: 10px 40px;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 footer {
@@ -84,4 +115,60 @@ a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media screen and (max-width: 380px) {
+    
+    body {
+        padding: 30px 20px;
+
+        background-image: url(../images/bg-mobile.svg);
+        background-color: var(--violet);
+    }
+
+    header img {
+        width: 40%;
+    }
+
+    main {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main #pics, #text {
+        width: 90%;
+        margin: auto;
+    }
+
+    main #pics img {
+        width: 100%;
+    }
+
+    main #text {
+        margin-top: 40px;
+    }
+
+    main #text h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    main #text p {
+        font-size: 16px;
+    }
+
+    main #text button {
+        padding: 15px 80px;
+    }
+
+    #social > a {
+        margin: 10px 20px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
 }
