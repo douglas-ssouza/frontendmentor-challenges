@@ -1,0 +1,135 @@
+/*
+- Mobile: 375px
+- Desktop: 1440px
+
+Note for text colors:
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+- Font size: 13px
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --moderateViolet: rgb(117, 65, 200);
+    --veryDarkGrayishBlue: rgb(72, 85, 106);
+    --veryDarkBlackishBlue: rgb(25, 33, 46);
+    --white: rgb(255, 255, 255);
+    --lightGray: rgb(207, 207, 207);
+    --lightGrayishBlue: rgb(236, 242, 248);
+}
+
+.item1 {grid-area: daniel;}
+.item2 {grid-area: jonathan;}
+.item3 {grid-area: jeanette;}
+.item4 {grid-area: patrick;}
+.item5 {grid-area: kira;}
+.pic {grid-area: pic;}
+.name {grid-area: name;}
+.graduate {grid-area: grad;}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--lightGrayishBlue);
+    padding: 40px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-areas: 'daniel daniel daniel jonathan kira'
+                        'jeanette patrick patrick patrick kira';
+    grid-gap: 30px;
+}
+
+main .testimonial {
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+main .testimonial img {
+    border-radius: 50%;
+}
+
+main .item1 {
+    background-color: var(--moderateViolet);
+    color: var(--lightGray);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+}
+
+main .item2 {
+    background-color: var(--veryDarkGrayishBlue);
+    color: var(--lightGray);
+}
+
+main .item3 {
+    background-color: var(--white);
+}
+
+main .item4 {
+    background-color: var(--veryDarkBlackishBlue);
+    color: var(--lightGray);
+}
+
+main .item5 {
+    background-color: var(--white);
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user .text {
+    margin-left: 10px;
+}
+
+.user p {
+    margin-top: 10px;
+}
+
+.user .grad {
+    margin-top: 5px;
+    opacity: 50%;
+}
+
+.testimonial h2 {
+    margin-top: 20px;
+}
+
+.testimonial > p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+
+    body {
+        padding: 20px;
+    }
+
+    main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
